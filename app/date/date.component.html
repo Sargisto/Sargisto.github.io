@@ -1,0 +1,56 @@
+<div class="container">
+	<!-- <h2>{{date}}</h2> -->
+<p>
+  date works {{message}}!
+</p>
+<!-- <h1 style='color:red'>{{date}}</h1>
+ -->
+<ul style='color:coral' >
+<li *ngFor='let items of items;
+let i=index ;let first=first;
+ let last=last;let ivo=even;let zg=odd' [ngClass]="{first:first,last:last,eve:ivo,zuyg:zg}">{{i+1}} {{items}}</li>
+</ul>
+
+<div *ngIf="!loggedIn; else loggedOut">
+<p>IF vide</p>
+</div>
+<ng-template #loggedOut>
+	else vide
+</ng-template>
+<br/>
+<br/>
+<br/>
+
+<p>Date componnent</p>
+<button *ngIf='eventText' class=" btn btn-danger"  (dblclick)='toggleText()'>show</button>
+<button class="but2" *ngIf='!eventText' (click)='toggleText()'>close</button>
+<h1 *ngIf='!eventText' [ngClass]="{class1:true}">Some TExTyui</h1><br>
+
+<input type='text' [(ngModel)]='inpText' />
+<p [ngClass]="{par:true}">{{inpText}}</p>
+
+
+<button (click)='toggle()' >Show and hide display</button>
+<div [ngClass]="{vide:visible}" [ngStyle]="{'font-size':'82px','color':'lime'}">Class toggle</div>
+</div>
+
+<!-- avelacnel yev jnjel -->
+
+ <br>
+
+ <form (submit)="sub(a.value,b.value)">
+  <input type="text" id="inp"  #a>
+  <input type="text"   #b>
+  <button type="submit">Add</button>
+ </form>
+
+
+ <div class="yellow">
+  <ul>
+   <li *ngFor="let items of items;
+        let i=index ;" class="lili">{{i+5}} {{items}}  
+     <button class="btn-danger" (click)='del(items)' >x</button>
+   </li>
+  </ul> 
+
+ </div>
