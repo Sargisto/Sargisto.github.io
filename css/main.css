@@ -1,124 +1,130 @@
-.btn-top{
-     display: none;
-	position: fixed;
-	bottom: 20px;
-	right: 40px;
-	z-index: 99;
-	border: none;
-	outline: none;
-	background-color: #585364;
-	color: #04A349;
-	cursor: pointer;
-	padding: 15px 40px;
-	border-radius: 10px;
-	font-size: 25px;
+body {
+background-color: #1A1A1A;
 }
-.one{background-color: black;
-padding: 2px;
-}
-.header{
-	padding: 20px;
+.positionTopImg {
 
 }
-.MyName{
-	color: silver;
-	cursor: pointer;
-}
-.MyName:hover{
-	color: white;
-}
-/*.a11>a>i:not(:first-child){
-    color: silver;
-	margin-left: 20px;
+.positionBottomImg {
 
-}*/
-.a{
+}
+.mainWrap {
+	display:none;
+	min-height: 630px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainContent {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 720px;
+    margin: auto;
+
+}
+.contentText {
+	    width: 320px;
+	     margin:0 16px;
+}
+.contentImgBox {
+	margin: 0 16px;
+}
+.contentText h1{
+	color:#fff;
+	font-size: 36px;
+	font-weight: bold;
+}
+.contentText p{
+	color:#E7E7E7;
+	font-size: 16px;
+	font-weight: bold;
+}
+.contentImg {
+	width:300px;
+	transition: all 0.45s;
+}
+.contentImg:hover {
+
+}
+.buttonBlock {
+	display: flex;
+	width:100%;
+	justify-content: flex-end;
+}
+.button {
+	border:2px solid #DB4365;
+	color:#fff;
+	font-weight: 500;
+	padding: 4px;
+	text-decoration: none;;
+	transition: all 0.25s;
+	border-radius: 8px;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.button:hover {
+	color:#DB4365;
+}
+.mainContent {
 	position: relative;
+	width: 100%;
 }
+.mainContent:before {
+		height: 250px;
+	width: 70%;
 
-.sp1{
-	color: silver;
-	cursor: pointer;
-	padding-bottom:  5px;
-
-
-}
-.sp1:hover{
-	color: white;
-	border-bottom:  solid white;
-}
-.f{
-	/*display: none;
+	content: "";
+	display: block;
 	position: absolute;
-	top:20px;
-	right:250px;*/
-	text-align: center;
+	top: -120px;
+	left: 10px;
+    background: linear-gradient(to right, #28289A, #1B1564);
+    border: 1px solid #333;
+    z-index: -1;
+    border-radius: 0 0 0 5px;
+    border:1px solid #171740;
+clip-path: polygon(0% 0%, 75% 0, 100% 64%, 100% 100%, 0% 100%);
 }
-.two{
-	background: linear-gradient(45deg, black,#37B3DD );
-	padding: 150px;
-}
-.Devel{
-	color: #57EEA1;
-}
-.Hi{
-	color: silver;
-	cursor: pointer;
-}
-.Hi:hover{color:#57EEA1; }
-.texno{
-	color: black;
-	margin: 2px auto;
-}
-.article{
-	margin-top: 100px;
-}
+.mainContent:after {
 
-.a33>img{
-	border-radius: 50%;
+	height: 250px;
+	content: "";
+	display: block;
+	width: 30%;
+	position: absolute;
+	bottom:-130px;
+	right: 10px;
+    background: linear-gradient(to left, #28289A, #1B1564);
+    border: 1px solid #333;
+    z-index: -1;
+    border-radius: 0 0 0 5px;
+    border:1px solid #171740;
+	clip-path: polygon(50% 0%, 100% 0, 100% 100%, 37% 100%, 0 5%, 0 0);
 }
-.a4>div:hover{
-	
-	
-	box-shadow: 5px 10px 18px #888888;
-}
-.a4>div>img{
-	margin: 50px;
-	width: 150px;
-	height: 150px;
-}
-.a6{
-	padding: 100px;
-}
-.a6>div>h1,.a6>div>h4{
-	text-align: center;
-}
-.a7>div{
-	cursor: pointer;
-}
-.a8{
-	padding-top: 125px;
-}
-.a8>div>h1>strong{color: #2D8DF6;}
-.a9>div>a>i{
-	font-size: 50px;
-	color: white;
-	margin-left: 25px;
-}
-.a9>div>p{color: silver;}
-.a9{padding: 100px;
-background-color: #292C33;
-margin-top: 50px;
-}
-.a10{
-	padding: 20px;
-	background-color: #1D1E25;
-}
-.a10>div>h4{text-align: center;}
-.MyName_2{color: #3AE2CE;}
-@media screen and (max-width: 768px){
-	.f{display: block;}
-	.block{display: none;}
-}
-.face:hover{color: #4267B2;}
-.insta:hover{color: #C133A4;}
+  .contentImgBox:hover {
+        align-self: flex-end;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        transform-origin: bottom;
+    }
+    .contentImgBox {
+        animation-name: bounce-1;
+        animation-timing-function: linear;
+    }
+    @keyframes bounce-1 {
+        0%   { transform: translateY(0); }
+        50%  { transform: translateY(-50px); }
+        100% { transform: translateY(0); }
+    }
+
+    @media only screen and (max-width: 768px) {
+    	.mainContent {
+    		flex-wrap: wrap;
+    	}
+    	.buttonBlock {
+    		justify-content: center;
+    	}
+    	.contentImgBox {
+animation-name:none;
+    	}
+    }
