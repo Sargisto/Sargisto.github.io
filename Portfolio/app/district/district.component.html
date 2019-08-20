@@ -1,0 +1,43 @@
+<button (click)='togEdit()'>Edit</button>
+<button (click)='add()'>add</button>
+<button (click)='ref()'>Refresh Table</button>
+<table id="dif" border="5" cellpadding="30">
+
+  <tr *ngIf='vide'>
+    <!-- <td class="vide"><input type='text' class="inp" [(ngModel)]='model.id'></td> -->
+    <td class="vide"><input type='text' class="inp" [(ngModel)]='model.name'></td>
+    <td class="vide"><input type='text' class="inp" [(ngModel)]='model.surname'></td>
+    <td class="vide"><input type='text' class="inp" [(ngModel)]='model.adress'></td>
+    <td class="vide"><input type='text' class="inp" [(ngModel)]='model.number'></td>
+    <td></td>
+    
+  </tr>
+  <tr class="first">
+    <td>Name</td>
+    <td>Surname</td>
+    <td>Adress</td>
+    <td>Number</td>
+    <td ><button (click)='del_all()'> Del All</button> </td>
+  </tr>
+  <tr *ngFor="let tab of table;let i=index;let kent=even;let zuyg=odd " [ngClass]="{kent:kent, zu:zuyg}">
+  
+    <td *ngIf="tab.id === EditTd"> <input type='text' class='inp_2' (dblclick)='save()' [(ngModel)]='tab.name'> </td>
+    <td *ngIf="tab.id !== EditTd" (dblclick)='Edit(tab.id)' >{{tab.name}}</td>
+
+    <td *ngIf="tab.id === EditTd"> <input type='text' class='inp_2' (dblclick)='save()'[(ngModel)]='tab.surname'> </td>
+    <td *ngIf="tab.id !== EditTd" (dblclick)='Edit(tab.id)' >{{tab.surname}}</td>
+
+    <td *ngIf="tab.id === EditTd"> <input type='text' class='inp_2' (dblclick)='save()' [(ngModel)]='tab.adress'> </td>
+    <td *ngIf="tab.id !== EditTd" (dblclick)='Edit(tab.id)' >{{tab.adress}}</td>
+
+    <td *ngIf="tab.id === EditTd"> <input type='text' class='inp_2' (dblclick)='save()' [(ngModel)]='tab.number'> </td>
+    <td *ngIf="tab.id !== EditTd" (dblclick)='Edit(tab.id)' >{{tab.number}}</td>
+
+    <button class='btn btn-danger' (click)='del(tab)'>delete</button>
+    
+  </tr>
+
+</table>
+<pre>
+  {{table | json}}
+</pre>

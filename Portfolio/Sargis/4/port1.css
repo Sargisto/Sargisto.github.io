@@ -1,0 +1,160 @@
+.header{
+	background: linear-gradient(45deg, #37B3DD, #E878AE);}
+.one1{
+	
+	padding: 20px;
+	text-align: center;
+}
+.e1{color: white;
+font-size: 18px;
+}
+.c1{
+	color:white;
+	padding-top: 20px;
+opacity: 0.8;
+}
+.c2{color:white;
+opacity: 0.5;
+padding-top: 20px;
+}
+.c2:hover{opacity: 0.8;}
+
+.a11{
+	color:white;
+	text-align: center;
+	padding-top: 250px;
+	padding-bottom: 500px;
+}
+.c{font-size: 40px;
+margin-top: 20px;}
+.wdeg{
+	background-color: white;
+	width: 100%;
+	padding-top:60px;
+	padding-bottom:60px;
+	transform: skewY(4deg);
+	overflow: visible;
+    box-sizing: border-box;
+	content: 'dfgdfhdghdfvjfskdfslkfslkf';
+	position: relative;
+	top:-60px;
+	
+}
+.blog{
+	background-color: #F8FAFF;
+	
+}
+.f44{
+margin-top:50px;
+}
+.f45{
+font-size: 20px;
+
+}
+.dd{margin-top: 40px;}
+.dd>div{
+	font-size: 16px;
+	color: grey;
+}
+.d2{margin-top: 50px;
+padding-bottom: 50px;
+}
+.inp>input{
+	width: 450px;
+	height: 50px;
+	padding-left: 5px;
+	margin-top: 20px;
+}
+.inp>button{
+	margin-top: 15px;
+	padding:  20px 50px 20px 50px ;
+	background-color: #78D5EF;
+	color:white;
+	border:none;
+	border-radius: 38px;
+	font-size: 15px;
+
+}
+.inp>button:hover{
+	background-color: white;
+	color:#78D5EF;
+	border:2px solid #78D5EF;
+}
+#e1{
+	height: 150px;
+}
+.wbeg{
+	background-color: white;
+	width: 100%;
+	padding-top:60px;
+	padding-bottom:60px;
+	transform: skewY(4deg);
+	overflow: visible;
+    box-sizing: border-box;
+	content: '';
+	position: relative;
+	top:60px;
+	
+}
+.blog9{
+	background-color: #29BAE4;
+}
+.brod{
+	padding-top: 160px;
+}
+.brod>div{color: white;
+font-size: 20px;
+opacity: 0.8;}
+.brod2{padding-top: 40px;
+opacity: 0.9;}
+
+.er,.eo{
+	color: white;
+	opacity: 0.5;
+	font-size: 15px;
+}
+.href{
+	background-color: #33BDE5;
+	padding:12px;
+	border-radius: 50px;
+	margin-left: 10px;
+}
+.twi{
+	color: white;
+	font-size: 22px;
+	opacity: 0.9;
+	
+
+}
+.end{
+	width: 200px;
+	height: 50px;
+	margin-top: 30px;
+	border:1px solid #54C8EA;
+	background-color: #29BAE4; 
+}
+#ends{
+	opacity: 0.8;
+	color: white;
+	font-size: 16px;
+	position: relative;
+	top: 15px;
+	left:10px;
+}
+.end>i{
+	opacity: 0.8;
+	color: white; 
+	font-size: 16px;
+	float: right;
+	position: relative;
+	top: 15px;
+	right:10px;
+}
+.ednof{
+	color: white;
+}
+.brod3{
+	padding-top: 60px;
+	padding-bottom: 160px;
+	opacity: 0.5;
+}
