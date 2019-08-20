@@ -1,12 +1,6 @@
 body {
 background-color: #1A1A1A;
 }
-.positionTopImg {
-
-}
-.positionBottomImg {
-
-}
 .mainWrap {
 	display:none;
 	min-height: 630px;
@@ -43,9 +37,6 @@ background-color: #1A1A1A;
 	width:300px;
 	transition: all 0.45s;
 }
-.contentImg:hover {
-
-}
 .buttonBlock {
 	display: flex;
 	width:100%;
@@ -70,8 +61,8 @@ background-color: #1A1A1A;
 	width: 100%;
 }
 .mainContent:before {
-		height: 250px;
-	width: 70%;
+    height: 300px;
+	width: 63%;
 
 	content: "";
 	display: block;
@@ -80,10 +71,11 @@ background-color: #1A1A1A;
 	left: 10px;
     background: linear-gradient(to right, #28289A, #1B1564);
     border: 1px solid #333;
-    z-index: -1;
+	z-index: -1;
+	box-shadow: 5px 20px black;
     border-radius: 0 0 0 5px;
     border:1px solid #171740;
-clip-path: polygon(0% 0%, 75% 0, 100% 64%, 100% 100%, 0% 100%);
+clip-path: polygon(0% 0%, 85% 0, 100% 90%, 100% 100%, 0% 100%);
 }
 .mainContent:after {
 
@@ -125,6 +117,6 @@ clip-path: polygon(0% 0%, 75% 0, 100% 64%, 100% 100%, 0% 100%);
     		justify-content: center;
     	}
     	.contentImgBox {
-animation-name:none;
+      animation-name:none;
     	}
     }
